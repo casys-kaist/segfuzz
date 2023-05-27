@@ -1,0 +1,7 @@
+*.ll
+*.o
+*.bc
+.installed/
+toolchains/
+tmp/
+.gdb-cmds.batch
