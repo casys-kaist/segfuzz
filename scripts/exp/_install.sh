@@ -10,19 +10,12 @@ _build_image() {
 	(cd $IMAGE_DIR; sh $SCRIPT)
 }
 
-_build_linux() {
-	_CONFIG="$KERNELS_DIR/guest/configs/config.x86_64"
-	_SCRIPT="$SCRIPTS_DIR/linux/build.sh"
-	CONFIG="$_CONFIG" sh "$_SCRIPT"
-}
-
 _download() {
 	:
 }
 
 _build() {
 	_build_image
-	_build_linux
 }
 
 _install() {
