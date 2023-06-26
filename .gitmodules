@@ -86,3 +86,7 @@
 	path = tools/qemu/roms/vbootrom
 	url = https://gitlab.com/qemu-project/vbootrom.git
 	ignore = dirty
+[submodule "kernels/linux"]
+	path = kernels/linux
+	url = git@github.com:threeearcat/linux.git
+	branch = segfuzz
